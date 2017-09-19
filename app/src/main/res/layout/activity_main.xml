@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context="com.reginand.labexer1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade Computation"
+        android:paddingLeft="30dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_height="5dip"
+        android:background="#000"
+        />
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Quiz 1"
+            android:paddingLeft="30dp"/>
+        <EditText
+            android:id="@+id/Q1"
+            android:gravity="right"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Quiz 2"
+            android:paddingLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/Q2"
+            android:gravity="right"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Seatworks"
+            android:paddingLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/SW"
+            android:gravity="right"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Lab Exercises"
+            android:paddingLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/LABEXER"
+            android:gravity="right"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Major Exam"
+            android:paddingLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/MajEx"
+            android:gravity="right"
+            />
+    </TableRow>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        android:layout_below="@+id/Compute"
+        android:layout_margin="20dp"
+        android:onClick="callSecondActivity"/>
+
+
+</TableLayout>
+
